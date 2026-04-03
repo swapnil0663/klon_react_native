@@ -24,7 +24,7 @@ const { width } = Dimensions.get('window');
 const API_URLS = {
   startSession: 'https://api.planet-ria.com/fastapi/start_session',
   processText: 'https://api.planet-ria.com/fastapi/process_text_testing',
-  googleSTT: 'https://speech.googleapis.com/v1/speech:recognize?key=AIzaSyCC1BDQm3_ABbk4OVAWUY5UoNkKjNEmnP4',
+  googleSTT: `https://speech.googleapis.com/v1/speech:recognize?key=${process.env.EXPO_PUBLIC_GOOGLE_STT_KEY}`,
 };
 
 const ASSETS = {
